@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    /*Primary*/
+
+--main-bg-dark-blue: hsl(233, 47%, 7%); /*main background*/
+--card-bg-Dark-desaturated-blue: hsl(244, 38%, 16%);/*card background*/
+--acc-Soft-violet: hsl(277, 64%, 61%);/*accent*/
+
+    /*Neutral*/
+
+--White: hsl(0, 0%, 100%);/*main heading, stats*/
+--main-p-transparent-white: hsla(0, 0%, 100%, 0.75);/*main paragraph*/
+--sh-transparent-white: hsla(0, 0%, 100%, 0.6);/*stat headings*/
+
+--ff-primary: 'Inter', sans-serif;
+--ff-secondary: 'Lexend Deca', sans-serif;
+
+--weight-regular: 400; 
+--weight-bold: 700; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    background-color: var(--main-bg-dark-blue);
+}
+ul{
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto; 
+}
+.mobile_img{
+    display: none;
+}
+main{
+    display: flex;
+    background-color: var(--card-bg-Dark-desaturated-blue);
+    border-radius: 10px;
+}
+
+/*start of left side card*/
+.left_card_container{
+    width: 35.5rem;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+}
+.content_container{
+    width: 27rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 4.1rem;
+    
+}
+h1{
+    width: 27rem;
+    font-family: var(--ff-primary);
+    font-size: 2.4rem;
+    font-weight: var(--weight-bold);
+    color: var(--White);
+}
+h1 span{
+    color: var(--acc-Soft-violet);
+}
+p{  
+    font-size: 16px;
+    width: 25rem;
+    font-family: var(--ff-secondary);
+    font-weight: var(--weight-regular);
+    color: var(--main-p-transparent-white);
+    line-height: 1.7rem;
+    margin-top: 1.5rem;
+}
+.stat_list{
+    display: flex;
+    justify-content: space-between;
+    width: 24.5rem;
+    line-height: 1.7rem;
+}
+.stat_list li{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-primary);
+    font-weight: var(--weight-bold);
+    font-size: 1.5rem;
+    color: var(--White);
+}
+.stat_list span{
+   font-family: var(--ff-primary);
+   font-weight: var(--weight-regular);
+   font-size: 0.7rem;
+   letter-spacing: 1px;
+   color: var(--sh-transparent-white);
+}
+
+/*end of leftside card*/
+
+/*start of right side card*/
+.image_container{
+    background-color: var(--acc-Soft-violet);
+    border-radius: 0 10px 10px 0;
+}
+.image_container img{
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+    border-radius: 0 10px 10px 0;
+}
+
+/*end of right side card*/
