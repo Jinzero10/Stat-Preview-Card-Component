@@ -8,5 +8,5 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [SOlUTION](https://github.com/Jinzero10/Stat-Preview-Card-Component.git)
-- Live Site URL: [LIVE SITE](https://your-live-site-url.com)
+- Solution URL: [SOLUTION](https://github.com/Jinzero10/Stat-Preview-Card-Component.git)
+- Live Site URL: [LIVE SITE](https://stat-card-jinzero.netlify.app/)
